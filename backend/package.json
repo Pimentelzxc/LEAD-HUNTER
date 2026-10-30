@@ -1,0 +1,18 @@
+{
+  "name": "@vorka/backend",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env.local --watch server.js",
+    "start": "node --env-file-if-exists=.env.local server.js",
+    "diagnose:maps": "node --env-file-if-exists=.env.local scripts/diagnose-maps.js"
+  },
+  "dependencies": {
+    "@vorka/shared": "*",
+    "@supabase/supabase-js": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+**/dist/
+.env
+.env.*
+!.env.example
+.vercel/
+supabase/.temp/
+supabase/.branches/
+backend/supabase/.temp/
+backend/supabase/.branches/
+artifacts/
+*.log

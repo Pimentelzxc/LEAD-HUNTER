@@ -1,0 +1,4 @@
+project_id = "vorka-lead-hunter"
+
+# Auth e PostgreSQL são usados pelo back-end Node em backend/.
+# Não há Edge Function nem chamada Google ativa nesta versão.

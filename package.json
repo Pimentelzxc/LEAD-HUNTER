@@ -1,0 +1,27 @@
+{
+  "name": "vorka-lead-hunter",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:front": "npm run dev --workspace @vorka/frontend",
+    "dev:back": "npm run dev --workspace @vorka/backend",
+    "diagnose:maps": "npm run diagnose:maps --workspace @vorka/backend",
+    "build": "npm run build --workspace @vorka/frontend",
+    "preview": "npm run preview --workspace @vorka/frontend",
+    "test": "node --test tests/*.test.js",
+    "check:backend": "node --check backend/api/places.js && node --check backend/lib/handler.js && node --check backend/server.js"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.13"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@vorka/shared",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./domain.js",
+    "./osm": "./osm.js",
+    "./geoapify": "./geoapify.js"
+  }
+}
